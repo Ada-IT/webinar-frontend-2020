@@ -1,0 +1,70 @@
+body {
+  /* * Tamaños de fuentes */
+  --tamanio-titulo-md: 140px;
+  --tamanio-texto-md: 36px;
+
+  /* * Colores para texto */
+  --color-texto: #424242;
+  --color-background: #fffffe;
+
+  /* * Colores */
+  --color-principal: #e91e63;
+}
+
+/** =====================================
+                 BASE
+  ===================================== */
+
+html,
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--color-background);
+}
+
+.centrado-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/** =====================================
+                LAYOUT
+    ===================================== */
+
+section {
+  height: 100vh;
+  padding: 0 50px;
+}
+
+/** =====================================
+           TEXTO
+    ===================================== */
+
+.titulo-seccion {
+  color: var(--color-texto);
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.texto-seccion {
+  color: var(--color-texto);
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  max-width: 630px;
+  letter-spacing: -1.2px;
+}
+
+.titulo-seccion-principal {
+  font-size: var(--tamanio-titulo-md);
+}
+
+.texto-seccion-principal {
+  font-size: var(--tamanio-texto-md);
+}
+
+.nombre {
+  color: var(--color-principal);
+}

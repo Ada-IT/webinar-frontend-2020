@@ -1,0 +1,148 @@
+body {
+  /* * Tamaños de fuentes */
+  --tamanio-titulo-md: 140px;
+  --tamanio-texto-md: 36px;
+
+  --tamanio-titulo-sm: 77px;
+  --tamanio-texto-sm: 28px;
+  
+  --tamanio-titulo-xs: 60px;
+  --tamanio-texto-xs: 22px;
+
+  /* * Tamaños de íconos */
+  --tamanio-icono-md: 90px;
+  --tamanio-icono-sm: 70px;
+
+  /* * Colores para texto */
+  --color-texto: #424242;
+  --color-background: #fffffe;
+  --color-background-secundario: #fafafa;
+
+  /* * Colores */
+  --color-principal: #e91e63;
+}
+
+/** =====================================
+                 BASE
+  ===================================== */
+
+html,
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--color-background);
+}
+
+* {
+  transition: 0.3s;
+}
+
+.centrado-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.background-secundario {
+  background: var(--color-background-secundario);
+}
+
+/** =====================================
+                LAYOUT
+  ===================================== */
+
+section {
+  height: 100vh;
+  padding: 0 50px;
+}
+
+/** =====================================
+                TEXTO
+  ===================================== */
+
+.titulo-seccion {
+  color: var(--color-texto);
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.texto-seccion {
+  color: var(--color-texto);
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  max-width: 630px;
+  letter-spacing: -1.2px;
+}
+
+.titulo-seccion-principal {
+  font-size: var(--tamanio-titulo-md);
+}
+
+.texto-seccion-principal {
+  font-size: var(--tamanio-texto-md);
+}
+
+.titulo-seccion-secundaria {
+  font-size: var(--tamanio-titulo-sm);
+}
+
+.texto-seccion-secundaria {
+  font-size: var(--tamanio-texto-sm);
+}
+
+.nombre {
+  color: var(--color-principal);
+}
+
+/** =====================================
+                ICONOS
+  ===================================== */
+
+.iconos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icono-dev {
+  width: var(--tamanio-icono-md);
+}
+
+.icono:hover {
+  transform: scale(1.2);
+}
+
+.icono {
+  margin-right: 15px;
+  margin-bottom: 35px;
+}
+
+/** =====================================
+                RESPONSIVE
+  ===================================== */
+
+@media (max-width: 1000px) {
+  .titulo-seccion-principal {
+    font-size: var(--tamanio-titulo-sm);
+  }
+  .texto-seccion-principal {
+    font-size: var(--tamanio-texto-sm);
+  }  
+  .texto-seccion-secundaria {
+    font-size: var(--tamanio-texto-xs);
+  }
+  .icono-dev {
+    width: var(--tamanio-icono-sm);
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    padding: 0 20px;
+  }
+  .titulo-seccion-secundaria {
+    font-size: var(--tamanio-titulo-xs);
+  }
+}
+  
